@@ -1,0 +1,16 @@
+import random
+print("¡Hola! intenta adivinar el número secreto")
+numero_secreto= random.randint(0,20)
+intentos=0
+continuar=True
+n=int(input("Ingresa un número"))
+while n!=numero_secreto:
+    if n>numero_secreto:
+        print("el numero secreto es bajo")
+    else:
+        print("el numero secreto es alto")
+    n=int(input("ingresa otro número"))
+    intentos+=1
+print("Felicidades por adivinar el número secreto en ",intentos," intentos")
+continuar = False
+print("END GAME")
